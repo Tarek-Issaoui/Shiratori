@@ -10,12 +10,13 @@
 </head>
 <body>
     <div>
-        <h1 style="text-align: center;">Shiritori Game</h1>
+        <h1 style="text-align: center;">Shiritori Game</h1>  
+        <!-- introduction of the game -->
         <h4 id="introduction">Shiritori (尻取り) is a word play game that involves saying Japanese words back and forth.<br>
           The catch is the next word must start with the same kana as the previously words’ last kana.<br>
            The word shiritori is a shortening of shiri o toru (尻を取る) with the two kanji for “rear” and “take”,<br>
             so the word essentially means “to take the rear”.</h4>
-        <div class="rules">
+        <div class="rules">       <!--Rules of the game-->
             <h3>Rules:</h3>
                <ul>
                   <li>Solo player.</li>
@@ -24,8 +25,8 @@
                   <li>Words should not be repeated.</li>
                   <li>The next word must start with the last letter of the previous word.</li>
                </ul>
-               <button class="start">Start</button>
-               <button class="restart">Restart</button>
+               <button class="start">Start</button>            <!-- boutton to start the game -->
+               <button class="restart">Restart</button>        <!-- boutton to restart the game -->
         </div>
 
     </div>
@@ -34,8 +35,9 @@
             <label for="ftext">Write a word:</label>
             <input type="text" id="fname" name="fname"><br><br>
         
-            <button class="submit">Play</button>
+            <button class="submit">Play</button>      <!--button to affiche the result when the user start played-->
     </div>
+    <!-- the result should affiched here -->
     <div id="allresult">
         <h3>Result:</h3>
         <div id="result"></div>

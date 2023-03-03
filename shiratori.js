@@ -3,9 +3,9 @@
 
 function shiritori(){
     var my_shiritori={}
-    my_shiritori.play=play
-    my_shiritori.words=[]
-    my_shiritori.restart=restart
+    my_shiritori.play=play                  //method to start the game tha takes a word as a parameters and check it is valid 
+    my_shiritori.words=[]                   //array of words
+    my_shiritori.restart=restart            //method to restart the gam
     return my_shiritori
 }
 var play=function(str){
