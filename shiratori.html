@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <title>shiratori</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Shiritori Game</h1>
+        <h4 id="introduction">Shiritori (尻取り) is a word play game that involves saying Japanese words back and forth.<br>
+          The catch is the next word must start with the same kana as the previously words’ last kana.<br>
+           The word shiritori is a shortening of shiri o toru (尻を取る) with the two kanji for “rear” and “take”,<br>
+            so the word essentially means “to take the rear”.</h4>
+        <div class="rules">
+            <h3>Rules:</h3>
+               <ul>
+                  <li>Solo player.</li>
+                  <li>A player who writes a word ending with the syllable N (ん) loses.</li>
+                  <li>Words should be contain more than 4 letters.</li>
+                  <li>Words should not be repeated.</li>
+                  <li>The next word must start with the last letter of the previous word.</li>
+               </ul>
+               <button class="start">Start</button>
+               <button class="restart">Restart</button>
+        </div>
+
+    </div>
+    <div class="box">
+        
+            <label for="ftext">Write a word:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+        
+            <button class="submit">Play</button>
+    </div>
+    <div id="allresult">
+        <h3>Result:</h3>
+        <div id="result"></div>
+    </div>
+    <script type="text/javascript" src="shiratori.js"></script>
+</body>
+</html>
